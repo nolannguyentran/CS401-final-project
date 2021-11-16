@@ -1,3 +1,8 @@
 h1 {
-    color:blue;
+    color:white;
+    text-align: center;
+}
+#heading { 
+    background-color: red;
+    padding: 30px;
 }

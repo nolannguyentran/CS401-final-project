@@ -8,7 +8,7 @@
 
 <body>
     <div class="headContainer">
-        <div class="titleItem">IRL Blog</div>
+        <div class="titleItem">IRL Blog...</div>
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"></div>

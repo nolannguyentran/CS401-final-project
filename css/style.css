@@ -1,8 +1,38 @@
-h1 {
+a {
+    text-decoration: none;
     color:white;
-    text-align: center;
 }
-#heading { 
-    background-color: red;
-    padding: 30px;
+.headContainer {
+    display: flex;
+    background-color: rgb(116, 117, 179);
+    height: 300px;
+}
+
+.titleItem{
+    width:20%;
+    /*background:goldenrod;*/
+    line-height: 300px;
+    text-align: center;
+    margin: 5px;
+    font-size: 60px;
+    color:white;
+}
+
+.headItem{
+    width: 10%;
+    /*background:goldenrod;*/
+    align-self:flex-end;
+    text-align: center;
+    margin: 5px;
+    font-size: 40px;
+    color:white;
+}
+
+.headItem:hover{
+    /*background-color: rgb(202, 202, 232);*/
+    background-color: rgb(161, 161, 196);
+}
+
+.active{
+    background-color: rgb(161, 161, 196);
 }

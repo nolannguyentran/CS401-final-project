@@ -14,10 +14,10 @@
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
-        <div class="headItem active">Home</div>
-        <div class="headItem"><a href="create.php">Create</a></div>
+        <div class="headItem"><a href="index.php">Home</a></div>
+        <div class="headItem active">Create</div>
         <div class="headItem"><a href="edit.php">Edit</a></div>
     </div>
     <!--<button type="button" onclick="helloJS()">Click Me!</button>-->
-    <p>Home</p>
+    <p>Create Blog</p>
 </body>

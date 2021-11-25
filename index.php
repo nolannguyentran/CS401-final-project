@@ -18,9 +18,8 @@
         <div class="headItem"></div>
         <div class="headItem active">Home</div>
         <div class="headItem"><a href="create.php">Create</a></div>
-        <div class="headItem"><a href="edit.php">Edit</a></div>
+        <div class="headItem"><a href="test.php">Edit</a></div>
     </div>
-    <!--<button type="button" onclick="helloJS()">Click Me!</button>-->
     <br>
     <br>
     <br>
@@ -90,6 +89,12 @@
         </tr>
     </table>
 -->
+<footer>
+    
+        <p>Copyright 2021</p>
+</footer>
 </body>
 <script src="js/main.js"></script>
+
+
 </html>

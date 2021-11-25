@@ -5,8 +5,17 @@ a {
 .headContainer {
     display: flex;
     background-color: rgb(116, 117, 179);
-    height: 30%;
+    height: 25%;
 }
+
+footer{
+    display: flex;
+    background-color: rgb(116, 117, 179);
+    height: 25%;
+    justify-content: center;
+    color:white;
+}
+
 
 .titleItem{
     width:20%;
@@ -57,6 +66,16 @@ a {
 .blogItem:hover{
     background-color: #e4bd5c;
 }
+
+.writingContainer{
+    display:flex;
+    
+    background-color:#f1dead;
+    padding: 20px;
+    justify-content: center;
+}
+
+
 /*
 .table{
     margin-left: auto;

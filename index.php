@@ -24,7 +24,7 @@
     <br>
     <br>
     <div class="blogContainer">
-        <div class="blogItem" onmouseover="makeVisible()" onmouseout="makeInvisible()">
+        <div class="blogItem" id = "1" onmouseover="makeVisible(event)" onmouseout="makeInvisible(event)">
         <h1>Blog 48</h1>
         <br>
         <h2>The Art of War</h2>
@@ -40,21 +40,37 @@
         <input type="image" id="p1" hidden src="img/pencil.png" name="edit" style="width:2.5em; height:2.5em; padding:55px">
         <input type="image" id="t1" hidden src="img/trash-can.png" name="delete" style="width:2.5em; height:2.5em; padding:55px">
         </div>
-        <div class="blogItem">
+        <div class="blogItem" id ="2" onmouseover="makeVisible(event)" onmouseout="makeInvisible(event)">
         <h1>Blog 47</h1>
         <br>
         <h2>My Journey as a CS Student</h2>
         <br>
         <br>
         <p>November 23, 2020</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="image" id="e2" hidden src="img/eyeball.png" name="view" style="width:3em; height:3em; padding:55px">
+        <input type="image" id="p2" hidden src="img/pencil.png" name="edit" style="width:2.5em; height:2.5em; padding:55px">
+        <input type="image" id="t2" hidden src="img/trash-can.png" name="delete" style="width:2.5em; height:2.5em; padding:55px">
         </div>
-        <div class="blogItem">
+        <div class="blogItem" id = "3" onmouseover="makeVisible(event)" onmouseout="makeInvisible(event)">
         <h1>Blog 46</h1>
         <br>
         <h2>My Political Views</h2>
         <br>
         <br>
         <p>October 11, 2020</p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="image" id="e3" hidden src="img/eyeball.png" name="view" style="width:3em; height:3em; padding:55px">
+        <input type="image" id="p3" hidden src="img/pencil.png" name="edit" style="width:2.5em; height:2.5em; padding:55px">
+        <input type="image" id="t3" hidden src="img/trash-can.png" name="delete" style="width:2.5em; height:2.5em; padding:55px">
         </div>
     </div>
     <br>

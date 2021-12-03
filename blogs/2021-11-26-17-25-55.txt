@@ -1,0 +1,7 @@
+Title 3
+Now that JavaScript has issued the request, and passed some parameters, PHP can see the data coming in through its $_GET array and use it to build our PHP from earlier “$hello”. Now again since we did this through the passing of parameters in a URL, PHP is going to see them as $_GET. If we had stuck these values in some form and submitted the form using JavaScript, PHP would have seen them in the $_POST array. So be mindful of the method you are using to pass the data.
+
+With the PHP arrays we can read in the values, manipulate them as we see fit (like to build queries or fetch some sort of data) and then stick our results back into some new JavaScript which we will print to the user. Remember, PHP prints the JavaScript with the results. That is how it gives info back to JavaScript. PHP prints its results and is unaware that the request came from JavaScript. It sees the request as just any other browser request.
+
+Below is an example of a function that we would print back to the user. Notice that the PHP function is printing a JavaScript function which it is dynamically building…
+2021-11-26-17-25-55

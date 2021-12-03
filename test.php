@@ -48,28 +48,45 @@
 
 
 <?php
+$counter = 1;
 $dir = "./blogs/";
-$a = scandir($dir);
-for($i=2; $i <count($a); $i++){
+$a = scandir($dir, 1);
+for($i=0; $i <(count($a)-2); $i++){
     $filename = $a[$i];
     $myfile = fopen($dir.$filename,"r");
     if (!$myfile) {
         die("Unable to open $filename.");
     }
     else{
+       
         echo "<div class=\"blogContainer\">";
-        echo "<div class=\"blogItem\">";
+        echo "<div class=\"blogItem\" id=\"".$counter."\" onmouseover=\"makeVisible(event)\" onmouseout=\"makeInvisible(event)\">";
         echo "<br>";
-        while (!feof($myfile)){
-            $line = fgets($myfile);
-            echo $line. "<br>";
-        }
+        //while (!feof($myfile)){
+          //  $line = fgets($myfile);
+            //echo $line. "<br>";
+        //}
+        $document = file($dir.$filename);
+        $title = $document[0];
+        $content = $document[1];
+        $date = $document[2];
+        echo "<h1>".$title."</h1> <br>";
+        echo "<p>".$content."</p>";
+        echo "<br>";
+        echo "<br>";
+        echo $date;
         fclose($myfile);
         echo "<br>";
+        echo "<input type=\"image\" id=\"e".$counter."\" hidden src=\"img/eyeball.png\" name=\"view\" style=\"width:3em; height:3em; padding:55px\">";
+        echo "<input type=\"image\" id=\"p".$counter."\" hidden src=\"img/pencil.png\" name=\"edit\" style=\"width:2.5em; height:2.5em; padding:55px\">";
+        echo "<input type=\"image\" id=\"t".$counter."\" hidden src=\"img/trash-can.png\" name=\"delete\" style=\"width:2.5em; height:2.5em; padding:55px\">";
         echo "</div>";
         echo "</div>";
+        $counter++;
         
     }
 }
 ?>
 </body>
+<script src="js/main.js"></script>
+</html>

@@ -23,29 +23,7 @@
     <br>
     <br>
     <br>
-    <!-- <div class="blogContainer">
-        <div class="blogItem" onmouseover="makeVisible()" onmouseout="makeInvisible()">
-        <h1>Blog 48</h1>
-        <br>
-        <h2>The Art of War</h2>
-        <br>
-        <br>
-        <p>January 11, 2021</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <input type="image" id="e1" hidden src="img/eyeball.png" name="view" style="width:3em; height:3em; padding:55px">
-        <input type="image" id="p1" hidden src="img/pencil.png" name="edit" style="width:2.5em; height:2.5em; padding:55px">
-        <input type="image" id="t1" hidden src="img/trash-can.png" name="delete" style="width:2.5em; height:2.5em; padding:55px">
-    </div> -->
-
-
-
-
-
-
+    
 
 <?php
 $counter = 1;
@@ -74,10 +52,10 @@ for($i=0; $i <(count($a)-2); $i++){
         echo "<p>".$content."</p>";
         echo "<br>";
         echo "<br>";
-        echo $date;
+        echo "<p id=\"date".$counter."\">".$date."</p>";
         fclose($myfile);
         echo "<br>";
-        echo "<input type=\"image\" id=\"e".$counter."\" hidden src=\"img/eyeball.png\" name=\"view\" style=\"width:3em; height:3em; padding:55px\">";
+        echo "<input type=\"image\" id=\"e".$counter."\" hidden onclick=\"viewPost(this)\" src=\"img/eyeball.png\" name=\"view\" style=\"width:3em; height:3em; padding:55px\">";
         echo "<input type=\"image\" id=\"p".$counter."\" hidden src=\"img/pencil.png\" name=\"edit\" style=\"width:2.5em; height:2.5em; padding:55px\">";
         echo "<input type=\"image\" id=\"t".$counter."\" hidden src=\"img/trash-can.png\" name=\"delete\" style=\"width:2.5em; height:2.5em; padding:55px\">";
         echo "</div>";
@@ -90,3 +68,5 @@ for($i=0; $i <(count($a)-2); $i++){
 </body>
 <script src="js/main.js"></script>
 </html>
+
+<!--https://stackoverflow.com/questions/42213858/how-can-i-get-parent-id-by-onclick-on-a-child-in-js-->

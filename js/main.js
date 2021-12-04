@@ -18,3 +18,9 @@ function makeInvisible(event)
 
 }
 
+function viewPost(event)
+{
+    let x = event.parentNode.id;
+    let name = document.getElementById("date"+x).innerHTML;
+    window.location.href = "view.php?name="+name;
+}

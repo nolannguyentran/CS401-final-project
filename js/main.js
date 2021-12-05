@@ -24,3 +24,10 @@ function viewPost(event)
     let name = document.getElementById("date"+x).innerHTML;
     window.location.href = "view.php?name="+name;
 }
+
+function editPost(event)
+{
+    let x = event.parentNode.id;
+    let name = document.getElementById("date"+x).innerHTML;
+    window.location.href = "edit.php?name="+name;
+}

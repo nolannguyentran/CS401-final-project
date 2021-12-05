@@ -6,7 +6,7 @@
     <title>Hello World</title>
 </head>
 
-<body>
+<body onload="myFunction()">
     <div class="headContainer">
         <div class="titleItem">IRL Blog...</div>
         <div class="headItem"></div>
@@ -15,9 +15,51 @@
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"><a href="index.php">Home</a></div>
-        <div class="headItem"><a href="create.php">Create</a></div>
-        <div class="headItem active">Edit</div>
+        <div class="headItem active">Create</div>
+        <div class="headItem"><a href="edit.php">Edit</a></div>
     </div>
     <!--<button type="button" onclick="helloJS()">Click Me!</button>-->
-    <p>Edit Blog</p>
+    <br>
+    <br>
+    <div class="writingContainer">
+    <form method="post" action="editing.php">
+    <?php
+$name = $_GET["name"];
+
+$dir = "./blogs/";
+$filename = $name;
+$myfile = fopen('./blogs/'.$filename.'.txt',"r");
+if (!$myfile){
+    die("Unable to open $filename.");
+}
+else{
+    $document = file($dir.$filename.'.txt');
+        $title = $document[0];
+        $content = $document[1];
+        echo "<div class=\"createTitle\">";
+        echo "<p>";
+        echo "<label for=\"title\">Title</label>";
+        echo "<br>";
+        echo "<textarea id=\"title\" name=\"title\" rows=\"1\" cols=\"200\">".$title."</textarea>";
+        echo "</p>";
+        echo "</div>";
+        echo "<div class=\"createContent\">";
+        echo "<p>";
+        echo "<label for=\"content\">Content:</label>";
+        echo "<br>";
+        echo "<textarea id=\"content\" name=\"blogEntry\" rows=\"15\" cols=\"200\">".$content."</textarea>";
+        echo "</p>";
+        echo "</div>";
+        echo "<input type=\"submit\" value=\"Edit\">";
+        echo "<textarea name=\"name\" rows=\"1\" cols=\"10\" hidden>".$name."</textarea>";
+
+        
+        fclose($myfile);
+}
+
+?>
+    </form>
+</div>
 </body>
+<script src="js/main.js"></script>
+</html>

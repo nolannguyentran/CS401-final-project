@@ -16,7 +16,7 @@
         <div class="headItem"></div>
         <div class="headItem"><a href="index.php">Home</a></div>
         <div class="headItem active">Create</div>
-        <div class="headItem"><a href="edit.php">Edit</a></div>
+        <div class="headItem">Edit</div>
     </div>
     <!--<button type="button" onclick="helloJS()">Click Me!</button>-->
     <br>

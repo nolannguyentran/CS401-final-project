@@ -1,11 +1,17 @@
 # Final website for CS401
 
-Name: YOUR NAME HERE
-email: YOUR EMAIL HERE
+Name: Nolan Nguyen-Tran
+email: nolannguyentran@u.boisestate.edu
 
 ## How to run this website
 
-Detail how to run your code here!
+In the final project directory, please type in this command:
+
+php -S localhost:3000
+
+Then open up an internet browser (preferrably chrome) and type in the search bar:
+
+localhost:3000
 
 ## Bugs
 

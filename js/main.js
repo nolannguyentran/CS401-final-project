@@ -31,3 +31,10 @@ function editPost(event)
     let name = document.getElementById("date"+x).innerHTML;
     window.location.href = "edit.php?name="+name;
 }
+
+function deletePost(event)
+{
+    let x = event.parentNode.id;
+    let name = document.getElementById("date"+x).innerHTML;
+    window.location.href = "deleting.php?name="+name;
+}

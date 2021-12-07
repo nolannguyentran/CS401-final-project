@@ -1,3 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hello World</title>
+    
+</head>
+
+<body>
+<div class="headContainer">
+        <div class="titleItem">IRL Blog...</div>
+        <div class="headItem"></div>
+        <div class="headItem"></div>
+        <div class="headItem"></div>
+        <div class="headItem"></div>
+        <div class="headItem"></div>
+        <div class="headItem"><a href="index.php">Home</a></div>
+        <div class="headItem"><a href="create.php">Create</a></div>
+        <div class="headItem">Edit</div>
+    </div>
+<p>Your blog has been successfully created!</p>
+
+
+
+
+
 <?php
 $author = $_POST["author"];
 $title = $_POST["title"];
@@ -18,3 +46,7 @@ else{
 //echo "<p>$title</p> <br> <p>$content</p>";
 
 ?>
+
+</body>
+<script src="js/main.js"></script>
+</html>

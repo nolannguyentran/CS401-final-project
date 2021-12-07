@@ -5,11 +5,7 @@ $content = $_POST["blogEntry"];
 $date = $_POST["date"];
 $filename = $_POST["name"];
 
-//echo $title;
-//echo "<br>";
-//echo $content;
-//echo "<br>";
-//echo $filename;
+
 
 
 $myfile = fopen('./blogs/'.$filename.'.txt',"w");
@@ -21,6 +17,5 @@ else{
     fclose($myfile);
 }
 
-//echo "<p>$title</p> <br> <p>$content</p>";
 
 ?>

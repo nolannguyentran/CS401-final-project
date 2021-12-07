@@ -8,7 +8,7 @@
     
 </head>
 
-<body>
+<body style="background-color:#161716">
 <div class="headContainer">
         <div class="titleItem">IRL Blog...</div>
         <div class="headItem"></div>

@@ -4,7 +4,7 @@ a {
 }
 .headContainer {
     display: flex;
-    background-color: rgb(116, 117, 179);
+    background-color: #616469;
     height: 25%;
 }
 
@@ -56,7 +56,7 @@ footer{
 }
 
 .blogItem{
-    background-color: goldenrod;
+    background-color: #acaeb0;
     color: white;
     height: 500px;
     text-align: center;
@@ -64,7 +64,7 @@ footer{
 }
 
 .blogItem:hover{
-    background-color: #e4bd5c;
+    background-color: #919294;
 }
 
 .writingContainer{

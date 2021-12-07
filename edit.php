@@ -34,8 +34,17 @@ if (!$myfile){
 }
 else{
     $document = file($dir.$filename.'.txt');
-        $title = $document[0];
-        $content = $document[1];
+        $author = $document[0];
+        $title = $document[1];
+        $content = $document[2];
+        $date = $document[3];
+        echo "<div class=\"createAuthor\">";
+        echo "<p>";
+        echo "<label for=\"author\">Author</label>";
+        echo "<br>";
+        echo "<textarea id=\"author\" name=\"author\" rows=\"1\" cols=\"50\">".$author."</textarea>";
+        echo "</p>";
+        echo "</div>";
         echo "<div class=\"createTitle\">";
         echo "<p>";
         echo "<label for=\"title\">Title</label>";
@@ -51,6 +60,7 @@ else{
         echo "</p>";
         echo "</div>";
         echo "<input type=\"submit\" value=\"Edit\">";
+        echo "<textarea name=\"date\" rows=\"1\" cols=\"10\" hidden>".$date."</textarea>";
         echo "<textarea name=\"name\" rows=\"1\" cols=\"10\" hidden>".$name."</textarea>";
 
         

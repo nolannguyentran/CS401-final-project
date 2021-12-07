@@ -23,11 +23,18 @@
     <br>
     <div class="writingContainer">
     <form method="post" action="processing.php">
+        <div class="createAuthor">
+            <p>
+                <label for="author">Author</label>
+                <br>
+                <textarea id="author" name="author" rows="1" cols="50"></textarea>
+</p>
+</div>
         <div class="createTitle">
     <p>
         <label for="title">Title</label>
         <br>
-        <textarea id="title" name="title" rows="1" cols="200"></textarea>
+        <textarea id="title" name="title" rows="1" cols="50"></textarea>
     </p>
 </div>
     <div class="createContent">

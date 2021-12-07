@@ -45,14 +45,19 @@ for($i=0; $i <(count($a)-2); $i++){
             //echo $line. "<br>";
         //}
         $document = file($dir.$filename);
-        $title = $document[0];
-        $content = $document[1];
-        $date = $document[2];
+        $author = $document[0];
+        $title = $document[1];
+        $content = $document[2];
+        $date = $document[3];
+        $name = $document[4];
         echo "<h1>".$title."</h1> <br>";
-        echo "<p>".$content."</p>";
+        echo "<h2> by ".$author."</h2> <br>";
+        //echo "<p>".$content."</p>";
         echo "<br>";
         echo "<br>";
-        echo "<p id=\"date".$counter."\">".$date."</p>";
+        echo "<p>".$date."</p>";
+        echo "<br>";
+        echo "<p id=\"name".$counter."\" hidden>".$name."</p>";
         fclose($myfile);
         echo "<br>";
         echo "<input type=\"image\" id=\"e".$counter."\" hidden onclick=\"viewPost(this)\" src=\"img/eyeball.png\" name=\"view\" style=\"width:3em; height:3em; padding:55px\">";

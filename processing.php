@@ -1,15 +1,17 @@
 <?php
+$author = $_POST["author"];
 $title = $_POST["title"];
 $content = $_POST["blogEntry"];
-$date = date("Y-m-d-H-i-s");
+$date = date("Y-m-d");
+$name = date("Y-m-d-H-i-s");
 
-$filename = $date;
+$filename = $name;
 $myfile = fopen('./blogs/'.$filename.'.txt',"w");
 if (!$myfile){
     die("Unable to open $filename.");
 }
 else{
-    fwrite($myfile, $title . PHP_EOL . $content . PHP_EOL . $date . PHP_EOL);
+    fwrite($myfile, $author . PHP_EOL . $title . PHP_EOL . $content . PHP_EOL . $date . PHP_EOL . $name . PHP_EOL);
     fclose($myfile);
 }
 

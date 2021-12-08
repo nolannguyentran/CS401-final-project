@@ -60,6 +60,14 @@ footer{
     color: white;
     height: 500px;
     text-align: center;
+    width:300px;
+}
+
+.blogPost{
+    background-color: #acaeb0;
+    color: white;
+    height: 500px;
+    text-align: center;
     width:75%;
 }
 
@@ -70,7 +78,7 @@ footer{
 .writingContainer{
     display:flex;
     
-    background-color:#f1dead;
+    background-color:#acaeb0;
     padding: 20px;
     justify-content: center;
 }

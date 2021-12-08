@@ -16,9 +16,9 @@
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
-        <div class="headItem">Home</div>
+        <div class="headItem"><a href="index.php">Home</a></div>
         <div class="headItem"><a href="create.php">Create</a></div>
-        <div class="headItem"><a href="test.php">Edit</a></div>
+        <div class="headItem">Edit</div>
     </div>
     <br>
     <br>
@@ -35,22 +35,21 @@ if (!$myfile){
     die("Unable to open $filename.");
 }
 else{
+    $document = file($dir.$filename.'.txt');
+    $author = $document[0];
+    $title = $document[1];
+    $content = $document[2];
+    $date = $document[3];
     echo "<div class=\"blogContainer\">";
-        echo "<div class=\"blogItem\">";
+        echo "<div class=\"blogPost\">";
         echo "<br>";
-        while (!feof($myfile)){
-            $line = fgets($myfile);
-            echo $line. "<br>";
-        }
-        //$document = file($dir.$filename);
-        //$title = $document[0];
-        //$content = $document[1];
-        //$date = $document[2];
-        //echo "<h1>".$title."</h1> <br>";
-        //echo "<p>".$content."</p>";
-        //echo "<br>";
-        //echo "<br>";
-        //echo "<p id=\"date".$counter."\">".$date."</p>";
+        
+       
+        echo "<h1 style=\"text-align:left\">".$title."</h1> <br>";
+        echo "<p>".$content."</p>";
+        echo "<br>";
+        echo "<br>";
+        echo "<p>".$date."</p>";
         fclose($myfile);
         echo "<br>";
         echo "</div>";

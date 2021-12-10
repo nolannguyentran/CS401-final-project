@@ -39,7 +39,8 @@ if (!$myfile){
     die("Unable to open $filename.");
 }
 else{
-    fwrite($myfile, $author . PHP_EOL . $title . PHP_EOL . $content . PHP_EOL . $date . PHP_EOL . $name . PHP_EOL);
+    //fwrite($myfile, $author . PHP_EOL . $title . PHP_EOL . $content . PHP_EOL . $date . PHP_EOL . $name . PHP_EOL);
+    fwrite($myfile, $title . PHP_EOL . $author . PHP_EOL . $date . PHP_EOL . $name . PHP_EOL . $content . PHP_EOL);
     fclose($myfile);
 }
 

@@ -47,11 +47,11 @@ for($i=0; $i <(count($a)-2); $i++){
             echo "<div class=\"blogItem\" id=\"".$counter."\" onmouseover=\"makeVisible(event)\" onmouseout=\"makeInvisible(event)\">";
             echo "<br>";
             $document = file($dir.$filename);
-            $author = $document[0];
-            $title = $document[1];
-            $content = $document[2];
-            $date = $document[3];
-            $name = $document[4];
+            $title = $document[0];
+            $author = $document[1];
+            $date = $document[2];
+            $name = $document[3];
+            $content = $document[4];
             echo "<div class=\"titleBlock\">";
             echo "<h1 class=\"blogItemTitle\">".$title."</h1> <br>";
             echo "</div>";

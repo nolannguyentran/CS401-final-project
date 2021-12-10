@@ -35,18 +35,29 @@ if (!$myfile){
     die("Unable to open $filename.");
 }
 else{
+    $numberOfLines=0;
     $document = file($dir.$filename.'.txt');
-    $author = $document[0];
-    $title = $document[1];
-    $content = $document[2];
-    $date = $document[3];
+    while (!feof($myfile)){
+        $line = fgets($myfile);
+                $numberOfLines++;
+            }
+    $title = $document[0];
+    $author = $document[1];
+    $date = $document[2];
+    $name = $document[3];
+    $content = $document[4];
     echo "<div class=\"blogContainer\">";
         echo "<div class=\"blogPost\">";
         echo "<br>";
-        
+        echo $numberOfLines;
        
         echo "<h1>".$title."</h1> <br>";
-        echo "<p>".$content."</p>";
+        echo "<p>";
+        for ($i = 4; $i<$numberOfLines+1; $i++){
+            echo $document[$i];
+            echo "<br>";
+        }
+        echo "</p>";
         echo "<br>";
         echo "<br>";
         echo "<p>".$date."</p>";

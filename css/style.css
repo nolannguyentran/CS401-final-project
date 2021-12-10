@@ -5,7 +5,7 @@ a {
 .headContainer {
     display: flex;
     background-color: #616469;
-    height: 25%;
+    height: 500px;
 }
 
 footer{
@@ -58,9 +58,18 @@ footer{
 .blogItem{
     background-color: #acaeb0;
     color: white;
-    height: 500px;
+    height: 700px;
     text-align: center;
-    width:300px;
+    width:450px;
+}
+
+.blogItemTitle{
+    font-size: 50px;
+    padding-top: 5%;
+}
+
+.titleBlock{
+    background-color: #3b3b3b;
 }
 
 .blogPost{

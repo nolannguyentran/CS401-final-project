@@ -8,7 +8,7 @@
     
 </head>
 
-<body>
+<body style="background-color:#161716">
 <div class="headContainer">
         <div class="titleItem">IRL Blog...</div>
         <div class="headItem"></div>
@@ -45,7 +45,7 @@ else{
         echo "<br>";
         
        
-        echo "<h1 style=\"text-align:left\">".$title."</h1> <br>";
+        echo "<h1>".$title."</h1> <br>";
         echo "<p>".$content."</p>";
         echo "<br>";
         echo "<br>";

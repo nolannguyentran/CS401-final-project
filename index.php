@@ -42,32 +42,39 @@ for($i=0; $i <(count($a)-2); $i++){
         if ($testCounter==5) {
             echo "</div>";
             echo "<div class=\"blogContainer\">";
-        $testCounter = 1;
+            $testCounter = 1;
         }
-        
-        
-        
             echo "<div class=\"blogItem\" id=\"".$counter."\" onmouseover=\"makeVisible(event)\" onmouseout=\"makeInvisible(event)\">";
             echo "<br>";
-            //while (!feof($myfile)){
-              //  $line = fgets($myfile);
-                //echo $line. "<br>";
-            //}
             $document = file($dir.$filename);
             $author = $document[0];
             $title = $document[1];
             $content = $document[2];
             $date = $document[3];
             $name = $document[4];
-            echo "<h1>".$title."</h1> <br>";
-            echo "<h2> by ".$author."</h2> <br>";
+            echo "<div class=\"titleBlock\">";
+            echo "<h1 class=\"blogItemTitle\">".$title."</h1> <br>";
+            echo "</div>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<h2>".$author."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp"."&nbsp".$date."</h2>";
             //echo "<p>".$content."</p>";
-            echo "<br>";
-            echo "<br>";
-            echo "<p>".$date."</p>";
+            //echo "<br>";
+            //echo "<br>";
+            //echo "<p>".$date."</p>";
             echo "<br>";
             echo "<p id=\"name".$counter."\" hidden>".$name."</p>";
             fclose($myfile);
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
+            echo "<br>";
             echo "<br>";
             echo "<input type=\"image\" id=\"e".$counter."\" hidden onclick=\"viewPost(this)\" src=\"img/eyeball.png\" name=\"view\" style=\"width:3em; height:3em; padding:55px\">";
             echo "<input type=\"image\" id=\"p".$counter."\" hidden onclick=\"editPost(this)\" src=\"img/pencil.png\" name=\"edit\" style=\"width:2.5em; height:2.5em; padding:55px\">";
@@ -76,9 +83,6 @@ for($i=0; $i <(count($a)-2); $i++){
             
             $counter++;
             $testCounter++;
-        
-        
-        
         
     }
 }

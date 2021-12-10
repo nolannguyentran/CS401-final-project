@@ -33,11 +33,18 @@ if (!$myfile){
     die("Unable to open $filename.");
 }
 else{
+    $numberOfLines=0;
     $document = file($dir.$filename.'.txt');
-        $author = $document[0];
-        $title = $document[1];
-        $content = $document[2];
-        $date = $document[3];
+    while (!feof($myfile)){
+        $line = fgets($myfile);
+                $numberOfLines++;
+            }
+    $document = file($dir.$filename.'.txt');
+    $title = $document[0];
+    $author = $document[1];
+    $date = $document[2];
+    $name = $document[3];
+    $content = $document[4];
         echo "<div class=\"createAuthor\">";
         echo "<p>";
         echo "<label for=\"author\">Author</label>";
@@ -56,7 +63,11 @@ else{
         echo "<p>";
         echo "<label for=\"content\">Content:</label>";
         echo "<br>";
-        echo "<textarea id=\"content\" name=\"blogEntry\" rows=\"15\" cols=\"200\">".$content."</textarea>";
+        echo "<textarea id=\"content\" name=\"blogEntry\" rows=\"15\" cols=\"200\">";
+        for ($i = 4; $i<$numberOfLines+1; $i++){
+            echo $document[$i];
+        }
+        echo "</textarea>";
         echo "</p>";
         echo "</div>";
         echo "<input type=\"submit\" value=\"Edit\">";

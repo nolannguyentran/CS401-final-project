@@ -97,6 +97,18 @@ footer{
     justify-content: center;
 }
 
+.messageContainer{
+    width:fit-content;
+    height:600px;
+    margin:auto;
+    background-color:#acaeb0;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 5%;
+
+}
+
 
 /*
 .table{

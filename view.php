@@ -61,7 +61,7 @@ else{
         echo "</p>";
         echo "<br>";
         echo "<br>";
-        echo "<p style=\"text-align: right;\">".$date."</p>";
+        echo "<p style=\"text-align: right; padding-right: 5%\">".$date."</p>";
         fclose($myfile);
         echo "<br>";
         echo "</div>";

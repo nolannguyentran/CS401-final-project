@@ -49,9 +49,10 @@ else{
     echo "<div class=\"blogContainer\">";
         echo "<div class=\"blogPost\">";
         echo "<br>";
-        echo $numberOfLines;
-       
+        //echo $numberOfLines;
+        echo "<div class=\"blogPostTitle\">";
         echo "<h1>".$title."</h1> <br>";
+        echo "</div>";
         echo "<p>";
         for ($i = 4; $i<$numberOfLines+1; $i++){
             echo $document[$i];
@@ -60,7 +61,7 @@ else{
         echo "</p>";
         echo "<br>";
         echo "<br>";
-        echo "<p>".$date."</p>";
+        echo "<p style=\"text-align: right;\">".$date."</p>";
         fclose($myfile);
         echo "<br>";
         echo "</div>";

@@ -68,6 +68,10 @@ footer{
     padding-top: 5%;
 }
 
+.blogPostTitle{
+    text-align: center;
+}
+
 .titleBlock{
     background-color: #3b3b3b;
 }
@@ -75,8 +79,9 @@ footer{
 .blogPost{
     background-color: #acaeb0;
     color: white;
-    height: 500px;
-    text-align: center;
+    /*height: 500px;*/
+    /*text-align: center;*/
+    font-size: 30px;
     width:75%;
 }
 

@@ -8,7 +8,7 @@
     
 </head>
 
-<body>
+<body style="background-color:#161716">
 <div class="headContainer">
         <div class="titleItem">IRL Blog...</div>
         <div class="headItem"></div>
@@ -39,8 +39,14 @@ if (!$myfile){
     die("Unable to open $filename.");
 }
 else{
-    //fwrite($myfile, $author . PHP_EOL . $title . PHP_EOL . $content . PHP_EOL . $date . PHP_EOL . $name . PHP_EOL);
     fwrite($myfile, $title . PHP_EOL . $author . PHP_EOL . $date . PHP_EOL . $name . PHP_EOL . $content . PHP_EOL);
+    echo "<div class=\"messageContainer\">";
+    echo "<h1>".$title." blog post has been successfully created!</h1>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<p>Press Home to return to back to home to see the changes!</p>";
+    echo "</div>";
     fclose($myfile);
 }
 

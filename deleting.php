@@ -38,7 +38,7 @@ else{
             $title = $document[0];
     unlink('./blogs/'.$filename.'.txt');
     echo "<div class=\"messageContainer\">";
-    echo "<h1>Your ".$title." blog post has been successfully deleted!</h1>";
+    echo "<h1>".$title." blog post has been successfully deleted!</h1>";
     echo "<br>";
     echo "<br>";
     echo "<br>";

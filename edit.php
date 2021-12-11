@@ -47,30 +47,30 @@ else{
     $content = $document[4];
         echo "<div class=\"createAuthor\">";
         echo "<p>";
-        echo "<label for=\"author\">Author</label>";
+        echo "<label for=\"author\" style=\"color:white; font-size:30px;\">Author</label>";
         echo "<br>";
         echo "<textarea id=\"author\" name=\"author\" rows=\"1\" cols=\"50\">".$author."</textarea>";
         echo "</p>";
         echo "</div>";
         echo "<div class=\"createTitle\">";
         echo "<p>";
-        echo "<label for=\"title\">Title</label>";
+        echo "<label for=\"title\" style=\"color:white; font-size:30px;\">Title</label>";
         echo "<br>";
-        echo "<textarea id=\"title\" name=\"title\" rows=\"1\" cols=\"200\">".$title."</textarea>";
+        echo "<textarea id=\"title\" name=\"title\" rows=\"1\" cols=\"50\">".$title."</textarea>";
         echo "</p>";
         echo "</div>";
         echo "<div class=\"createContent\">";
         echo "<p>";
-        echo "<label for=\"content\">Content:</label>";
+        echo "<label for=\"content\" style=\"color:white; font-size:30px;\">Content:</label>";
         echo "<br>";
-        echo "<textarea id=\"content\" name=\"blogEntry\" rows=\"15\" cols=\"200\">";
+        echo "<textarea id=\"content\" name=\"blogEntry\" rows=\"30\" cols=\"200\">";
         for ($i = 4; $i<$numberOfLines+1; $i++){
             echo $document[$i];
         }
         echo "</textarea>";
         echo "</p>";
         echo "</div>";
-        echo "<input type=\"submit\" value=\"Edit\">";
+        echo "<input type=\"submit\" value=\"Edit Post\" class=\"button\">";
         echo "<textarea name=\"date\" rows=\"1\" cols=\"10\" hidden>".$date."</textarea>";
         echo "<textarea name=\"name\" rows=\"1\" cols=\"10\" hidden>".$name."</textarea>";
 

@@ -16,9 +16,9 @@
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
+        <div class="headItem"></div>
         <div class="headItem"><a href="index.php">Home</a></div>
         <div class="headItem"><a href="create.php">Create</a></div>
-        <div class="headItem">Edit</div>
     </div>
     <br>
     <br>
@@ -49,7 +49,6 @@ else{
     echo "<div class=\"blogContainer\">";
         echo "<div class=\"blogPost\">";
         echo "<br>";
-        //echo $numberOfLines;
         echo "<div class=\"blogPostTitle\">";
         echo "<h1>".$title."</h1> <br>";
         echo "</div>";
@@ -61,14 +60,13 @@ else{
         echo "</p>";
         echo "<br>";
         echo "<br>";
+        echo "<p style=\"text-align: right; padding-right: 5%\">Blog by ".$author."</p>";
         echo "<p style=\"text-align: right; padding-right: 5%\">".$date."</p>";
         fclose($myfile);
         echo "<br>";
         echo "</div>";
         echo "</div>";
 }
-
-//echo "<p>$title</p> <br> <p>$content</p>";
 
 ?>
 </body>

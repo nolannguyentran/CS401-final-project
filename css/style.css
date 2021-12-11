@@ -16,14 +16,18 @@ footer{
     color:white;
 }
 
-
+textarea{
+    background-color:#161716; 
+    color:white;
+    font-size: 15px;
+}
 .titleItem{
     width:20%;
     /*background:goldenrod;*/
     line-height: 300px;
     text-align: left;
-    margin: 5px;
-    font-size: 60px;
+    margin: 8px;
+    font-size: 80px;
     color:white;
 }
 
@@ -39,11 +43,11 @@ footer{
 
 .headItem:hover{
     /*background-color: rgb(202, 202, 232);*/
-    background-color: rgb(161, 161, 196);
+    background-color: #85888f;
 }
 
 .active{
-    background-color: rgb(161, 161, 196);
+    background-color: #85888f;
 }
 
 
@@ -92,7 +96,6 @@ footer{
 
 .writingContainer{
     display:flex;
-    
     background-color:#acaeb0;
     padding: 20px;
     justify-content: center;
@@ -110,19 +113,9 @@ footer{
 
 }
 
-
-/*
-.table{
-    margin-left: auto;
-    margin-right: auto;
-    width:50%;
-}
-
-td{
-    width: 33%;
-    padding-bottom: 33%;
-    background-color: goldenrod;
-    text-align: center;
+.button{
+    background-color: #919294;
+    font-size: 20px;
     color:white;
+    float:right;
 }
-*/

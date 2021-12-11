@@ -16,9 +16,9 @@
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
+        <div class="headItem"></div>
         <div class="headItem active">Home</div>
         <div class="headItem"><a href="create.php">Create</a></div>
-        <div class="headItem">Edit</div>
     </div>
     <br>
     <br>
@@ -92,4 +92,5 @@ echo "</div>";
 <script src="js/main.js"></script>
 </html>
 
+<!--the link below is a stack overflow post that helped me to -->
 <!--https://stackoverflow.com/questions/42213858/how-can-i-get-parent-id-by-onclick-on-a-child-in-js-->

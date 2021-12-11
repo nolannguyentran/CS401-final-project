@@ -40,7 +40,7 @@ if (!$myfile){
 else{
     fwrite($myfile, $title.$author.$date.$name.$content);
     echo "<div class=\"messageContainer\">";
-    echo "<h1>".$title." blog post has been successfully created!</h1>";
+    echo "<h1>".$title." blog post has been successfully edited!</h1>";
     echo "<br>";
     echo "<br>";
     echo "<br>";

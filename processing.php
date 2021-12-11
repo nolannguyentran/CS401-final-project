@@ -20,7 +20,9 @@
         <div class="headItem"><a href="create.php">Create</a></div>
         <div class="headItem">Edit</div>
     </div>
-<p>Your blog has been successfully created!</p>
+    <br>
+    <br>
+    <br>
 
 
 
@@ -34,12 +36,13 @@ $date = date("Y-m-d");
 $name = date("Y-m-d-H-i-s");
 
 $filename = $name;
+echo './blogs/'.$filename.'.txt';
 $myfile = fopen('./blogs/'.$filename.'.txt',"w");
 if (!$myfile){
     die("Unable to open $filename.");
 }
 else{
-    fwrite($myfile, $title . PHP_EOL . $author . PHP_EOL . $date . PHP_EOL . $name . PHP_EOL . $content . PHP_EOL);
+    fwrite($myfile, $title."\n".$author."\n".$date."\n".$name."\n". $content);
     echo "<div class=\"messageContainer\">";
     echo "<h1>".$title." blog post has been successfully created!</h1>";
     echo "<br>";

@@ -7,8 +7,6 @@ a {
     background-color: #616469;
     height: 500px;
 }
-
-
 textarea{
     background-color:#161716; 
     color:white;
@@ -16,14 +14,12 @@ textarea{
 }
 .titleItem{
     width:20%;
-    /*background:goldenrod;*/
     line-height: 400px;
     text-align: left;
     margin: 8px;
     font-size: 80px;
     color:white;
 }
-
 .nameItem{
     width:10%;
     align-self:flex-end;
@@ -36,32 +32,24 @@ textarea{
 }
 .headItem{
     width: 10%;
-    /*background:goldenrod;*/
     align-self:flex-end;
     text-align: center;
     margin: 5px;
     font-size: 40px;
     color:white;
 }
-
 .headItem:hover{
-    /*background-color: rgb(202, 202, 232);*/
     background-color: #85888f;
 }
-
 .active{
     background-color: #85888f;
 }
-
-
 .blogContainer{
     display:flex;
-    /*background-color: red;*/
     padding: 20px;
     gap: 10%;
     justify-content: center;
 }
-
 .blogItem{
     background-color: #acaeb0;
     color: white;
@@ -69,41 +57,32 @@ textarea{
     text-align: center;
     width:450px;
 }
-
 .blogItemTitle{
     font-size: 40px;
     padding-top: 5%;
 }
-
 .blogPostTitle{
     text-align: center;
 }
-
 .titleBlock{
     background-color: #3b3b3b;
 }
-
 .blogPost{
     background-color: #acaeb0;
     color: white;
-    /*height: 500px;*/
-    /*text-align: center;*/
     font-size: 30px;
     padding: 2%;
     width:75%;
 }
-
 .blogItem:hover{
     background-color: #919294;
 }
-
 .writingContainer{
     display:flex;
     background-color:#acaeb0;
     padding: 20px;
     justify-content: center;
 }
-
 .messageContainer{
     width:fit-content;
     height:600px;
@@ -113,9 +92,7 @@ textarea{
     color: white;
     font-size: 30px;
     padding: 5%;
-
 }
-
 .button{
     background-color: #919294;
     font-size: 20px;

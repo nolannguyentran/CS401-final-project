@@ -74,8 +74,6 @@ for($i=0; $i <(count($a)-2); $i++){
             echo "<br>";
             echo "<br>";
             echo "<br>";
-            echo "<br>";
-            echo "<br>";
             echo "<input type=\"image\" id=\"e".$counter."\" hidden onclick=\"viewPost(this)\" src=\"img/eyeball.png\" name=\"view\" style=\"width:3em; height:3em; padding:55px\">";
             echo "<input type=\"image\" id=\"p".$counter."\" hidden onclick=\"editPost(this)\" src=\"img/pencil.png\" name=\"edit\" style=\"width:2.5em; height:2.5em; padding:55px\">";
             echo "<input type=\"image\" id=\"t".$counter."\" hidden onclick=\"deletePost(this)\" src=\"img/trash-can.png\" name=\"delete\" style=\"width:2.5em; height:2.5em; padding:55px\">";

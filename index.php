@@ -11,7 +11,7 @@
 <body style="background-color:#161716">
 <div class="headContainer">
         <div class="titleItem">IRL Blog...</div>
-        <div class="headItem"></div>
+        <div class="nameItem"><p>by Nolan Nguyen-Tran</p></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
@@ -86,9 +86,14 @@ for($i=0; $i <(count($a)-2); $i++){
 }
 echo "</div>";
 ?>
+
+    
+
+
 </body>
 <script src="js/main.js"></script>
 </html>
 
-<!--the link below is a stack overflow post that helped me to -->
+
+<!--the link below is a stack overflow post that helped me to get the parent's id from a child -->
 <!--https://stackoverflow.com/questions/42213858/how-can-i-get-parent-id-by-onclick-on-a-child-in-js-->

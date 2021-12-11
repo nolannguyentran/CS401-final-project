@@ -1,7 +1,6 @@
 
 function makeVisible(event)
 {
- //alert(event.currentTarget.id);
  let x = event.currentTarget.id;
 
  document.getElementById("e"+x).hidden=false;

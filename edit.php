@@ -6,10 +6,10 @@
     <title>Hello World</title>
 </head>
 
-<body onload="myFunction()">
+<body style="background-color:#161716">
     <div class="headContainer">
         <div class="titleItem">IRL Blog...</div>
-        <div class="headItem"></div>
+        <div class="nameItem"><p>by Nolan Nguyen-Tran</p></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
@@ -61,7 +61,7 @@ else{
         echo "</div>";
         echo "<div class=\"createContent\">";
         echo "<p>";
-        echo "<label for=\"content\" style=\"color:white; font-size:30px;\">Content:</label>";
+        echo "<label for=\"content\" style=\"color:white; font-size:30px;\">Content</label>";
         echo "<br>";
         echo "<textarea id=\"content\" name=\"blogEntry\" rows=\"30\" cols=\"200\">";
         for ($i = 4; $i<$numberOfLines+1; $i++){

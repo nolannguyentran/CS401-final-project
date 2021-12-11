@@ -9,7 +9,7 @@
 <body style="background-color:#161716" onload="myFunction()">
     <div class="headContainer">
         <div class="titleItem">IRL Blog...</div>
-        <div class="headItem"></div>
+        <div class="nameItem"><p>by Nolan Nguyen-Tran</p></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
@@ -39,7 +39,7 @@
 </div>
     <div class="createContent">
     <p>
-        <label for="content" style="color:white; font-size:30px">Content:</label>
+        <label for="content" style="color:white; font-size:30px">Content</label>
         <br>
         <textarea id="content" name="blogEntry" rows="30" cols="200"></textarea>
     </p>

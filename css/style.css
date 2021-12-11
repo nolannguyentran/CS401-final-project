@@ -8,13 +8,6 @@ a {
     height: 500px;
 }
 
-footer{
-    display: flex;
-    background-color: rgb(116, 117, 179);
-    height: 25%;
-    justify-content: center;
-    color:white;
-}
 
 textarea{
     background-color:#161716; 
@@ -24,13 +17,23 @@ textarea{
 .titleItem{
     width:20%;
     /*background:goldenrod;*/
-    line-height: 300px;
+    line-height: 400px;
     text-align: left;
     margin: 8px;
     font-size: 80px;
     color:white;
 }
 
+.nameItem{
+    width:10%;
+    align-self:flex-end;
+    text-align: left;
+    line-height: 491px;
+    padding-right: 30%;
+    margin: 5px;
+    font-size: 20px;
+    color:white;
+}
 .headItem{
     width: 10%;
     /*background:goldenrod;*/

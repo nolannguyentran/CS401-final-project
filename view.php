@@ -11,7 +11,7 @@
 <body style="background-color:#161716">
 <div class="headContainer">
         <div class="titleItem">IRL Blog...</div>
-        <div class="headItem"></div>
+        <div class="nameItem"><p>by Nolan Nguyen-Tran</p></div>
         <div class="headItem"></div>
         <div class="headItem"></div>
         <div class="headItem"></div>

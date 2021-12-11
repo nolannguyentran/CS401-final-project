@@ -29,3 +29,4 @@ This website has the following features:
 5. User is able to edit a blog post by either changing the name, title, and the actual content of the blog.
 6. User is able to delete a blog post.
 7. Appropiate messages show up when a user successfully create, edit, and delete a blog post.
+8. Features dark colors to create a "dark mode" (inspired by Github's dark mode).
